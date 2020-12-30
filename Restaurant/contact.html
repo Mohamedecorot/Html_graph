@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pour bien manger, le restaurant est idéal">
-    <title>Le Fiasco, contact</title>
+    <meta name="description" content="la description de mon restaurant">
+    <title>Nous contacter</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" title="Accueil">Accueil</a></li>
-            <li><a href="menu.html" title="Menu">Menu</a></li>
-            <li><a href="contact.html" title="Contact">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Nous contacter</h1>
-    <form action="contact.html">
-        <fieldset>
-            <legend>Nous contacter</legend>
+    <!-- https://unsplash.com/ pour des images libres d'accès-->
+    <header>
+        <h1>Nous contacter</h1>
+        <nav>
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="menu.html" title="Voir le menu">Menu</a>
+            <a href="contact.html" title="Nous contacter">Contact</a>
+        </nav>
+        <img src="img/plat-fiasco.png" alt="photo d'un plat" width="1260" height="366">
+    </header>
+    <section>
+        <h2>Où nous trouver</h2>
+        <p>
+            123 rue de démonstration <br>
+            13000 Marseille <br>
+            France
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8767317166066!2d5.371633214907984!3d43.295903083479956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0bf45abc481%3A0x91f20d84830ed96e!2sGrande%20Roue%20de%20Marseille!5e0!3m2!1sfr!2sfr!4v1609342378177!5m2!1sfr!2sfr" width="1200" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <h2>Nous envoyer un message</h2>
+        <form action="contact.html">
             <div>
-                <label for="emailinput">Votre email</label>
-                <input type="email" name="email" id="emailinput">
+                <label for="email">Votre email <sup>*</sup></label>
+                <input type="email" required id="email" name="email">
             </div>
             <div>
-                <label for="nameinput">Votre nom</label>
-                <input type="text" name="email" id="nameinput">
+                <label for="firstname">Votre prénom <sup>*</sup></label>
+                <input type="text" required id="firstname" name="firstname">
             </div>
-            <button type="submit">Envoyer</button>
-        </fieldset>
-    </form>
+
+            <div>
+                <label for="message">Votre message <sup>*</sup></label>
+                <textarea required id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Envoyer votre message</button>
+        </form>
+    </section>
+    <footer>
+        <address>123 rue de démo</address>
+    </footer>
 </body>
 </html>
